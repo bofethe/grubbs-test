@@ -41,7 +41,4 @@ def grubbs_test(x):
         return outliers
 
     else:
-        print('No outliers deteched')
-        
-test_arr = np.array([1,2,3,4,5,6,200])
-t = grubbs_test(test_arr)
+        print('No outliers detected')
