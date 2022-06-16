@@ -3,7 +3,7 @@ from scipy.stats import stats
 
 def grubbs_test(x):
     assert type(x) == np.ndarray, 'Input needs numpy array, but {} was provided'.format(type(x))
-    assert x.ndim == 1, 'Input needs 1 demension, but {} was provided'.format(x.ndim)
+    assert x.ndim == 1, 'Input needs 1 dimension, but {} was provided'.format(x.ndim)
     
     outliers = []
     def find_outliers(x, outliers):
